@@ -1,0 +1,1045 @@
+{
+	"<java.lang.StringBuilder: java.lang.String toString()>":
+		{
+			"taint":["base"]
+		},
+		
+	"<java.lang.String: java.lang.String trim()>":
+		{
+			"taint":["base"]
+		},
+		
+	"<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>":
+		{
+			"taint":["base","args"]
+		},
+		
+	"<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>":
+		{
+			"taint":["base","args"]
+		},
+		
+	"<android.content.Context: java.lang.String getString(int)>":
+		{
+			"taint":["arg0"]
+		},
+		
+	"<android.content.res.Resources: java.lang.String getString(int)>":
+		{
+			"taint":["arg0"]
+		},
+		
+	"<java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>":
+		{
+			"taint":["args"]
+		},
+		
+	"<android.content.res.Resources: int getIdentifier(java.lang.String,java.lang.String,java.lang.String)>":
+		{
+			"taint":["args"]
+		},
+		
+	"<java.lang.String: java.lang.String replaceFirst(java.lang.String,java.lang.String)>":
+		{
+			"taint":["base","args"]
+		},
+		
+	"<java.lang.Integer: int intValue()>":
+		{
+			"taint":["base"]
+		},
+		
+	"<java.lang.Integer: java.lang.Integer valueOf(int)>":
+		{
+			"taint":["arg0"]
+		},
+		
+	"<java.util.Calendar: int get(int)>":
+		{
+			"taint":["base","arg0"]
+		},
+		
+	"<java.util.Calendar: void setTimeInMillis(long)>":
+		{
+			"taint":["base","arg0"]
+		},
+		
+	"<java.util.Calendar: java.util.Calendar getInstance()>":
+		{
+			"taint":[]
+		},
+		
+	"<java.io.ByteArrayOutputStream: byte[] toByteArray()>":
+		{
+			"taint":["base"]
+		},
+		
+	"<java.util.Arrays: byte[] copyOf(byte[],int)>":
+		{
+			"taint":["args"]
+		},
+		
+	"<java.lang.String: byte[] getBytes()>":
+		{
+			"taint":["base"]
+		},
+		
+	"<java.util.Arrays: byte[] copyOfRange(byte[],int,int)>":
+		{
+			"taint":["args"]
+		},
+		
+	"<java.lang.String: int length()>":
+		{
+			"taint":["base"]
+		},
+	
+	"<java.nio.ByteBuffer: byte[] array()>":
+		{
+			"taint":["base"]
+		},
+		
+	"<java.nio.ByteBuffer: java.nio.ByteBuffer allocate(int)>":
+		{
+			"taint":["arg0"]
+		},
+		
+	"<android.util.SparseArray: java.lang.Object get(int)>":
+		{
+			"taint":["base"]
+		},
+		
+	"<java.lang.Math: int round(float)>":
+		{
+			"taint":["arg0"]
+		},
+		
+	"<java.lang.String: java.lang.String substring(int)>":
+		{
+			"taint":["base", "args"]
+		},
+		
+	"<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>":
+		{
+			"taint":["base", "arg1"]
+		},
+		
+	"<java.lang.String: byte[] getBytes(java.nio.charset.Charset)>":
+		{
+			"taint":["base"]
+		},
+		
+	"<java.util.Map: java.lang.Object get(java.lang.Object)>":
+		{
+			"taint":["base"], "isSystemAPISrc":["List"]
+		},
+		
+	"<java.lang.Boolean: java.lang.Boolean valueOf(boolean)>":
+		{
+			"taint":["arg0"]
+		},
+		
+	"<android.os.Parcel: java.lang.String readString()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.nio.ByteBuffer: byte get(int)>":
+		{
+			"taint":["base"]
+		},
+
+	"java.io.StringWriter: java.lang.String toString()":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.String: char charAt(int)>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.String: int indexOf(int)>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.Character: int digit(char,int)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.nio.ByteBuffer: java.nio.ByteBuffer putShort(short)>":
+		{
+			"taint":["base", "args"]
+		},
+
+	"<java.lang.Integer: byte byteValue()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.Object: java.lang.Object clone()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.util.ArrayList: java.lang.Object get(int)>":
+		{
+			"taint":["base"], "isSystemAPISrc":["List"]
+		},
+
+	"<java.util.ArrayList: void get(java.lang.Object)>":
+		{
+			"taint":["arg0"]
+		},
+
+	"<java.lang.StringBuilder: java.lang.StringBuilder append(int)>":
+		{
+			"taint":["base", "args"]
+		},
+
+	"<java.lang.Math: int min(int,int)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.Integer: int parseInt(java.lang.String,int)>":
+		{
+			"taint":["arg0"]
+		},
+
+	"<java.util.List: int size()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.String: char[] toCharArray()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.util.List: java.util.Iterator iterator()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.util.Iterator: java.lang.Object next()>":
+		{
+			"taint":["base"], "isSystemAPISrc":["List"]
+		},
+
+	"<java.util.List: java.lang.Object get(int)>":
+		{
+			"taint":["base"], "isSystemAPISrc":["List"]
+		},
+
+	"<java.util.Set: java.util.Iterator iterator()>":
+		{
+			"taint":["base"], "isSystemAPISrc":["List"]
+		},
+
+	"<java.lang.Integer: int parseInt(java.lang.String)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.Byte: byte byteValue()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.util.Queue: java.lang.Object poll()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.String: byte[] getBytes(java.lang.String)>":
+		{
+			"taint":["base"]
+		},
+
+	"<android.util.Base64: byte[] decode(java.lang.String,int)>":
+		{
+			"taint":["arg0"]
+		},
+
+	"<java.lang.Math: float max(float,float)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.String: java.lang.String format(java.util.Locale,java.lang.String,java.lang.Object[])>":
+		{
+			"taint":["arg1", "arg2"]
+		},
+
+	"<java.lang.String: java.lang.String substring(int,int)>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.Number: int intValue()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.Object: java.lang.String toString()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.StringBuilder: java.lang.StringBuilder append(char)>":
+		{
+			"taint":["base", "args"]
+		},
+
+	"<java.lang.String: java.lang.String valueOf(double)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.Math: float abs(float)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.Long: java.lang.Long valueOf(long)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.Long: long parseLong(java.lang.String)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.Integer: java.lang.String toString(int)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.nio.ByteBuffer: java.nio.ByteBuffer putInt(int)>":
+		{
+			"taint":["base", "args"]
+		},
+
+	"<java.lang.Class: java.lang.Object cast(java.lang.Object)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.util.ArrayDeque: java.lang.Object peek()> ":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.StringBuilder: java.lang.StringBuilder append(long)>":
+		{
+			"taint":["base", "args"]
+		},
+
+	"<java.util.ArrayList: int size()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.Float: float parseFloat(java.lang.String)> ":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.CharSequence: java.lang.String toString()>":
+		{
+			"taint":["base"]
+		},
+
+	"<org.json.JSONObject: int getInt(java.lang.String)>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.math.BigDecimal: int intValue()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.util.Calendar: java.util.Calendar getInstance(java.util.TimeZone)>":
+		{
+			"taint":[]
+		},
+
+	"<java.util.Queue: java.lang.Object peek()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.Math: int abs(int)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.Math: int max(int,int)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.nio.ByteBuffer: int position()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.String: java.lang.String valueOf(int)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.util.TimeZone: int getRawOffset()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.nio.ByteBuffer: java.nio.ByteBuffer order(java.nio.ByteOrder)>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.Float: float floatValue()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.util.Calendar: java.util.Calendar getInstance(java.util.Locale)>":
+		{
+			"taint":[]
+		},
+
+	"<java.math.BigInteger: long longValue()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.io.InputStream: int read(byte[])>":
+		{
+			"taint":["base", "arg0"], "isSystemAPISrc":["LOCALFILE"]
+		},
+
+	"<java.io.InputStreamReader: void <init>(java.io.InputStream)>":
+		{
+			"taint":["base", "arg0"], "isSystemAPISrc":["LOCALFILE"]
+		},
+
+	"<<java.lang.ClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>":
+		{
+			"taint":["arg0"], "isSystemAPISrc":["LOCALFILE"]
+		},
+
+	"<java.security.MessageDigest: byte[] digest()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.util.LinkedList: java.lang.Object poll()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.util.Date: long getTime()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.Double: double parseDouble(java.lang.String)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.io.BufferedInputStream: int read(byte[])>":
+		{
+			"taint":["base", "arg0"], "isSystemAPISrc":["LOCALFILE"]
+		},
+
+	"<java.util.Calendar: long getTimeInMillis()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.StringBuilder: java.lang.StringBuilder append(float)>":
+		{
+			"taint":["base", "args"]
+		},
+
+	"<java.lang.Float: java.lang.Float valueOf(float)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.nio.ByteBuffer: java.nio.ByteBuffer wrap(byte[])>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.util.List: java.lang.Object remove(int)>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.Double: java.lang.Double valueOf(double)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.io.BufferedReader: java.lang.String readLine()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.util.ArrayList: java.lang.Object remove(int)>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.Long: long parseLong(java.lang.String,int)>":
+		{
+			"taint":["arg0"]
+		},
+
+	"<java.lang.String: java.lang.String toUpperCase()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.Number: byte byteValue()>":
+		{
+			"taint":["base"]
+		},
+
+	"<android.text.Editable: java.lang.String toString()>":
+		{
+			"taint":[], "isSystemAPISrc":["UI"]
+		},
+
+	"<java.lang.Thread: java.lang.Thread currentThread()>":
+		{
+			"taint":["base"]
+		},
+
+	"<android.util.Base64: java.lang.String encodeToString(byte[],int)>":
+		{
+			"taint":["arg0"]
+		},
+
+	"<java.io.InputStream: int available()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.nio.ByteBuffer: java.nio.ByteBuffer put(byte[])>":
+		{
+			"taint":["base", "args"]
+		},
+
+	"<java.util.Enumeration: java.lang.Object nextElement()>":
+		{
+			"taint":["base"], "isSystemAPISrc":["List"]
+		},
+
+	"<java.util.Queue: java.lang.Object element()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.StringBuffer: java.lang.String toString()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.io.File: long length()>":
+		{
+			"taint":["base"], "isSystemAPISrc":["LOCALFILE"]
+		},
+
+	"<java.lang.Byte: byte parseByte(java.lang.String)>":
+		{
+			"taint":["args"]
+		},
+
+	"<android.util.Base64: byte[] decode(byte[],int)>":
+		{
+			"taint":["base", "arg0"]
+		},
+
+	"<java.util.ListIterator: java.lang.Object next()>":
+		{
+			"taint":["base"], "isSystemAPISrc":["List"]
+		},
+
+	"<java.util.Vector: java.lang.Object remove(int)>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.Boolean: boolean booleanValue()>":
+		{
+			"taint":["base"]
+		},
+
+	"<org.json.JSONObject: java.lang.String getString(java.lang.String)>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.util.LinkedList: java.lang.Object remove(int)>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.util.zip.CRC32: long getValue()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.util.Locale: java.lang.String toString()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.nio.ByteBuffer: java.nio.ByteBuffer putLong(long)>":
+		{
+			"taint":["base"]
+		},
+
+	"<org.json.JSONArray: long getLong(int)>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.math.BigDecimal: float floatValue()>":
+		{
+			"taint":["base"]
+		},
+
+	"<org.json.JSONArray: java.lang.String getString(int)>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.nio.ByteBuffer: int limit()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.nio.ByteBuffer: short getShort()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.util.Deque: java.lang.Object removeFirst()>":
+		{
+			"taint":["base"]
+		},
+
+	"<android.widget.EditText: android.text.Editable getText()>":
+		{
+			"taint":[], "isSystemAPISrc":["UI"]
+		},
+
+	"<java.io.File: java.lang.String getName()>":
+		{
+			"taint":["base"], "isSystemAPISrc":["LOCALFILE"]
+		},
+
+	"<java.io.File: java.lang.String getAbsolutePath()>":
+		{
+			"taint":["base"], "isSystemAPISrc":["LOCALFILE"]
+		},
+
+	"<android.content.Context: android.content.ContentResolver getContentResolver()>":
+		{
+			"taint":["base"]
+		},
+
+	"<android.net.Uri: java.lang.String toString()>":
+		{
+			"taint":["base"]
+		},
+
+	"<android.net.Uri: java.lang.String getPath()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.String: java.lang.String toUpperCase(java.util.Locale)>":
+		{
+			"taint":["base"]
+		},
+
+	"<android.net.Uri getUri()>":
+		{
+			"taint":["base"]
+		},
+
+	"<android.content.SharedPreferences: boolean getBoolean(java.lang.String,boolean)>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILEShare"]
+		},
+
+	"<android.content.SharedPreferences: float getFloat(java.lang.String,float)>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILEShare"]
+		},
+
+	"<android.content.SharedPreferences: int getInt(java.lang.String,int)>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILEShare"]
+		},
+
+	"<android.content.SharedPreferences: int getLong(java.lang.String,long)>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILEShare"]
+		},
+
+	"<android.content.SharedPreferences: java.lang.String getString(java.lang.String,java.lang.String)>":
+		{
+			"taint":["arg0"], "isSystemAPISrc":["LOCALFILEShare"]
+		},
+
+	"<android.content.SharedPreferences getSharedPreferences(java.lang.String,int)>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILEShare"]
+		},
+
+	"<android.content.Intent: boolean getBooleanExtra(java.lang.String,boolean)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+	"<android.content.Intent: boolean[] getBooleanArrayExtra(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: android.os.Bundle getBundleExtra(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: byte getByteExtra(java.lang.String,byte)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: byte[] getByteArrayExtra(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: char getCharExtra(java.lang.String,char)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: char[] getCharArrayExtra(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: java.lang.CharSequence[] getCharSequenceArrayExtra(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: java.lang.CharSequence getCharSequenceExtra(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: android.content.ClipData getClipData()>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent getIntent()>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: double getDoubleExtra(java.lang.String,double)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: double[] getDoubleArrayExtra(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: android.os.Bundle getExtras()>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: float getFloatExtra(java.lang.String,float)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: float[] getFloatArrayExtra(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: int getIntExtra(java.lang.String,int)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: int[] getIntArrayExtra(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: long getLongExtra(java.lang.String,long)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: long[] getLongArrayExtra(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: short getShortExtra(java.lang.String,short)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: short[] getShortArrayExtra(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+	"<android.content.Intent: java.io.Serializable getSerializableExtra(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+	"<android.content.Intent: android.os.Parcelable getParcelableExtra(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["INTENT"]
+		},
+
+		"<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+	"<android.os.Bundle: boolean[] getBooleanArray(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: android.os.Bundle getBundle(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: byte getByte(java.lang.String,byte)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: byte[] getByteArray(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: char getChar(java.lang.String,char)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: char[] getCharArray(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: java.lang.String getString(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: java.lang.CharSequence[] getCharSequenceArray(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: java.lang.CharSequence getCharSequence(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: android.content.ClipData getClipData()>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: double getDouble(java.lang.String,double)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: double getDouble(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: double[] getDoubleArray(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: float getFloat(java.lang.String,float)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: float getFloat(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: float[] getFloatArray(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: int getInt(java.lang.String,int)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: int getInt(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: int[] getIntArray(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: long getLong(java.lang.String,long)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: long getLong(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: long[] getLongArray(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: short getShort(java.lang.String,short)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: short getShort(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: short[] getShortArray(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: java.io.Serializable getSerializable(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.os.Bundle: android.os.Parcelable getParcelable(java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["BUNDLE"]
+		},
+
+	"<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILESql"]
+		},
+
+	"<android.content.Context: android.database.sqlite.SQLiteDatabase openDatabase(java.lang.String,android.database.sqlite.SQLiteDatabase$CursorFactory,int)>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILESql"]
+		},
+
+	"<android.content.Context: android.database.sqlite.SQLiteDatabase openDatabase(java.io.File,android.database.sqlite.SQLiteDatabase$OpenParams)>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILESql"]
+		},
+
+	"<android.content.Context: android.database.sqlite.SQLiteDatabase openDatabase(java.io.File,android.database.sqlite.SQLiteDatabase$CursorFactory,int,android.database.DatabaseErrorHandler)>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILESql"]
+		},
+
+	"<android.content.Context: android.database.sqlite.SQLiteDatabase openOrCreateDatabase(java.io.File,android.database.sqlite.SQLiteDatabase$CursorFactory)>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILESql"]
+		},
+
+	"<android.content.Context: android.database.sqlite.SQLiteDatabase openOrCreateDatabase(java.lang.String,int,android.database.sqlite.SQLiteDatabase$CursorFactory)>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILESql"]
+		},
+
+	"<android.content.Context: android.database.sqlite.SQLiteDatabase openOrCreateDatabase(java.lang.String,android.database.sqlite.SQLiteDatabase$CursorFactory)>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILESql"]
+		},
+
+	"<android.content.Context: android.database.sqlite.SQLiteDatabase openOrCreateDatabase(java.lang.String,android.database.sqlite.SQLiteDatabase$CursorFactory,android.database.DatabaseErrorHandler)>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILESql"]
+		},
+
+	"<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILESql"]
+		},
+
+	"<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[],android.os.CancellationSignal)>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILESql"]
+		},
+
+	"<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQueryWithFactory(android.database.sqlite.SQLiteDatabase$CursorFactory,java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILESql"]
+		},
+
+	"<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQueryWithFactory(android.database.sqlite.SQLiteDatabase$CursorFactory,java.lang.String,java.lang.String[],java.lang.String)>":
+		{
+			"taint":[], "isSystemAPISrc":["LOCALFILESql"]
+		},
+
+	"<java.util.UUID: java.util.UUID fromString(java.lang.String)>":
+		{
+			"taint":["arg0"]
+		}
+
+}
+
