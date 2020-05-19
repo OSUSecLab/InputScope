@@ -15,7 +15,7 @@ This is an Eclipse project that depends on Flowdroid:
 # <span id="jump">Running Example</span>
 
 ### target example code from *example/InputScopeExample.apk*
-<!-- ### we provide four hidden behaviors as present in our paper, here, we only use the **master password** as an example -->
+
 ```java
 ...
 
@@ -113,11 +113,17 @@ INFO: Loading resource table...
 }
 ```
 **source** includes information about a single user-input, and each **sink** is for one input validation of such user-input.
-# Contact
 
-**InputScope** was primarily developed by **Qingchuan Zhao** and **Chaoshun Zuo** at the Ohio State University, collaborated with [Dr. Brendan Dolan-Gavitt](https://engineering.nyu.edu/faculty/brendan-dolan-gavitt), [Dr. Giancarlo Pellegrino](https://trouge.net/), and supervised by [Dr. Zhiqiang Lin](http://web.cse.ohio-state.edu/~lin.3021/).
+# Citing
 
-If you have any question about this project, please contact:
-
-- Qingchuan Zhao (zhao dot 2708 at buckeyemail dot osu dot edu)
-- Chaoshun Zuo (zuo dot 118 at buckeyemail dot osu dot edu)
+If you create a research work that uses our work, please citing the associated paper:
+```
+@inproceedings{inputscope:sp20,
+  author    = {Qingchuan Zhao, Chaoshun Zuo, Brendan Dolan-Gavitt, Giancarlo Pellegrino, and Zhiqiang Lin} ,
+  title     = {Automatic Uncovering of Hidden Behaviors From Input Validation in Mobile Apps},
+  booktitle = {Proceedings of the 2020 IEEE Symposium on Security and Privacy},
+  address   = {San Francisco, CA},
+  month     = {May},
+  year      = 2020,
+}
+```
