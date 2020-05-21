@@ -119,7 +119,7 @@ INFO: Loading resource table...
 If you create a research work that uses our work, please citing the associated paper:
 ```
 @inproceedings{inputscope:sp20,
-  author    = {Qingchuan Zhao, Chaoshun Zuo, Brendan Dolan-Gavitt, Giancarlo Pellegrino, and Zhiqiang Lin} ,
+  author    = {Qingchuan Zhao and Chaoshun Zuo and Brendan Dolan-Gavitt and Giancarlo Pellegrino and Zhiqiang Lin} ,
   title     = {Automatic Uncovering of Hidden Behaviors From Input Validation in Mobile Apps},
   booktitle = {Proceedings of the 2020 IEEE Symposium on Security and Privacy},
   address   = {San Francisco, CA},
