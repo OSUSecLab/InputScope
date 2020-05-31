@@ -116,7 +116,7 @@ INFO: Loading resource table...
 
 # Citing
 
-If you create a research work that uses our work, please citing the associated paper:
+If you create a research work that uses our work, please cite the associated paper:
 ```
 @inproceedings{inputscope:sp20,
   author    = {Qingchuan Zhao and Chaoshun Zuo and Brendan Dolan-Gavitt and Giancarlo Pellegrino and Zhiqiang Lin} ,
